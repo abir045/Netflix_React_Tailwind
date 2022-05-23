@@ -1,7 +1,8 @@
-import { async } from "@firebase/util";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import Logo from "../images/Logo.svg";
+import LogoMobile from "../images/LogoMobile.svg";
 
 const Navbar = () => {
   const { user, logOut } = UserAuth();
@@ -19,21 +20,31 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between p-4 z-[100] w-full absolute ">
+    <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
-        <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
+        {/* <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
           Netflix
-        </h1>
+        </h1> */}
+        <img className="hidden md:block" src={Logo} alt="logo" />
+        <img className="md:hidden" src={LogoMobile} alt="logo" />
       </Link>
+      <div>
+        <Link to="/">
+          <button className="text-white px-4 md:hidden">TV Shows</button>
+        </Link>
+        <Link to="/">
+          <button className="text-white px-4 md:hidden">Movies</button>
+        </Link>
+      </div>
       {user?.email ? (
         <div>
           <Link to="/account">
-            <button className="text-white pr-4">Account</button>
+            <button className="text-white px-4">My List</button>
           </Link>
 
           <button
             onClick={handleLogout}
-            className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white"
+            className="bg-red-600 px-4 py-2 rounded cursor-pointer text-white"
           >
             Logout
           </button>
@@ -41,7 +52,7 @@ const Navbar = () => {
       ) : (
         <div>
           <Link to="/login">
-            <button className="text-white pr-4">Sign In</button>
+            <button className=" text-white pr-4 ">Sign In</button>
           </Link>
           <Link to="/signup">
             <button className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white">
