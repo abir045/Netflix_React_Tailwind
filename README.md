@@ -1,4 +1,4 @@
-# Netflix clone built with React Js, Tailwind Css, a an API called TMDB and Firebase tools
+# Netflix clone built with React Js, Tailwind Css, an API called TMDB and Firebase tools
 
 [Live Url](https://netflix-tailwind-react.web.app/)
 
