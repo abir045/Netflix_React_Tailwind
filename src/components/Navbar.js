@@ -22,18 +22,21 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
-        {/* <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
-          Netflix
-        </h1> */}
         <img className="hidden md:block" src={Logo} alt="logo" />
         <img className="md:hidden" src={LogoMobile} alt="logo" />
       </Link>
-      <div>
+      <div className="hidden md:flex items-center absolute mx-32">
         <Link to="/">
-          <button className="text-white px-4 md:hidden">TV Shows</button>
+          <button className="text-white ml-0  px-2">Home</button>
         </Link>
         <Link to="/">
-          <button className="text-white px-4 md:hidden">Movies</button>
+          <button className="text-white px-2 ">TV Shows</button>
+        </Link>
+        <Link to="/">
+          <button className="text-white px-2 ">Movies</button>
+        </Link>
+        <Link to="/">
+          <button className="text-white px-2 ">Recently Added</button>
         </Link>
       </div>
       {user?.email ? (
