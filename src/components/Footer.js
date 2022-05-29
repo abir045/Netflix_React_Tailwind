@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <hr className="h-[14px] my-6  shadow-inner w-full shadow-[#303030]" />
+      <hr className="h-5 my-6 shadow-inner w-full shadow-[#8c8b8b] opacity-50" />
 
       <div className="hidden px-4 py-4 mt-8 p-4 sm:block">
         <div className="flex px-4 mx-14">
