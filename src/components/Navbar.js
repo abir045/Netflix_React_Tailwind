@@ -40,7 +40,7 @@ const Navbar = () => {
           <button className="text-white px-2 ">Recently Added</button>
         </Link>
       </div>
-      <div className="flex items-center  text-white absolute right-48">
+      <div className="flex items-center  text-white  absolute right-40 px-16">
         <BiSearch size={30} />
       </div>
       {user?.email ? (

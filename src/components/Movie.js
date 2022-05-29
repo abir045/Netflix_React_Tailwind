@@ -29,9 +29,9 @@ export const Movie = ({ item }) => {
 
   return (
     <>
-      <div className="w-[160px] sm:w-[200px] md:w-[300px] lg:w-[280px] inline-block cursor-pointer rounded-lg relative  my-4 transition duration-150 hover:ease-in-out hover:scale-[1.2] hover:origin-bottom-right hover:overflow-hidden">
+      <div className="w-[160px] sm:w-[200px] md:w-[300px] lg:w-[280px] inline-block cursor-pointer rounded-lg relative  my-4 transition duration-150 hover:ease-in-out hover:scale-[1.3] hover:origin-bottom-right hover:overflow-hidden">
         <img
-          className="w-full h-auto block "
+          className="w-[119px] h-[180px] sm:w-full sm:h-full block "
           src={`https://image.tmdb.org/t/p/w500/${item?.backdrop_path}`}
           alt={item.title}
         />
