@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import Logo from "../images/Logo.svg";
 import LogoMobile from "../images/LogoMobile.svg";
+import { BiSearch } from "react-icons/bi";
 
 const Navbar = () => {
   const { user, logOut } = UserAuth();
@@ -39,8 +40,11 @@ const Navbar = () => {
           <button className="text-white px-2 ">Recently Added</button>
         </Link>
       </div>
+      <div className="flex items-center  text-white absolute right-48">
+        <BiSearch size={30} />
+      </div>
       {user?.email ? (
-        <div>
+        <div className="flex items-center">
           <Link to="/account">
             <button className="text-white px-4">My List</button>
           </Link>

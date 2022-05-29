@@ -6,6 +6,7 @@ import Login from "./components/pages/Login";
 import Account from "./components/pages/Account";
 import Signup from "./components/pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </AuthContextProvider>
     </>
   );

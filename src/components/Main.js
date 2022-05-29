@@ -52,7 +52,7 @@ const Main = () => {
                 <h2 className="text-base font-[600]">Play</h2>
               </button>
 
-              <button className="flex border  text-white border-gray-300 bg-gray-500 py-2 px-5 ml-5">
+              <button className="flex border  text-white border-gray-300 bg-gray-600 opacity-70 py-2 px-7 ml-5 rounded">
                 + My List
               </button>
             </div>
